@@ -1,0 +1,43 @@
+.tabContainer {
+  position: absolute;
+  top: 20rem;
+}
+
+.h1text {
+  color: white;
+  margin-top: 3rem;
+  font-weight: 600;
+  font-family: var;
+}
+
+.loginTab button {
+  background-color: rgb(222, 222, 222) !important;
+}
+
+li button .nav-link {
+  background-color: green !important;
+}
+
+.loginText {
+  color: var(--mainfontcolor);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form {
+  background-color: rgba(27, 166, 101, 0.8);
+  padding: 4rem;
+  border-radius: 0.9rem;
+}
+
+.tabs {
+  max-width: 23rem;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.label {
+  font-weight: var(--fontwhtbold);
+  font-family: var(--mainfont);
+  color: var(--mainfontcolor) !important;
+}

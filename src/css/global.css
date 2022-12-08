@@ -1,0 +1,38 @@
+:root {
+  /* Fonts */
+  --mainfont: "Open Sans", sans-serif;
+  --secondfont: "Poppins", sans-serif;
+  --mainfontcolor: #ffffff;
+  --altfontcolor: #4b4b4b;
+  --fontwhtregular: 400;
+  --fontwhtmedium: 500;
+  --fontwhtsemibold: 600;
+  --fontwhtbold: 700;
+  --h1size: 4.5rem;
+  --h2size: 2rem;
+  --psize: 1rem;
+  --navtextsize: 1.25rem;
+  --ctatextsize: 1.5rem;
+
+  /* Colors */
+  --bitblue: #1e1940;
+  --darkblue: #0f0e26;
+  --forestgreen: #1f7354;
+  --springgreen: rgb(27, 166, 101);
+  --botsgreen: #2cbf60;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--mainfontcolor) !important;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+main {
+  height: 90vh;
+}

@@ -1,0 +1,17 @@
+.footerStyling {
+  text-align: center;
+  color: var(--mainfontcolor) !important;
+  background-color: var(--bitblue) !important;
+  font-family: var(--mainfont);
+  padding: 1rem 0;
+}
+
+.logo {
+  width: 100%;
+  max-width: 10rem;
+}
+
+.textFooter {
+  font-family: var(--secondfont);
+  font-size: var(--navtextsize);
+}
