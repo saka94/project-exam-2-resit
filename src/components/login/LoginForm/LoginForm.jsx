@@ -32,15 +32,16 @@ export default function LoginForm() {
             </Form>
           </Tab>
           <Tab eventKey="Sign up" title="Sing up">
-            <Form>
+            <Form className={styles.formSignup}>
+              <h2 className={styles.loginText}>Sign up</h2>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label className={styles.label}>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
+                <Form.Label className={styles.label}>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicCheckbox">

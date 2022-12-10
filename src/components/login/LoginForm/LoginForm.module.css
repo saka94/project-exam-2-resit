@@ -10,8 +10,8 @@
   font-family: var;
 }
 
-.loginTab button {
-  background-color: rgb(222, 222, 222) !important;
+.loginTab ul button {
+  background-color: rgba(27, 166, 101, 0.8) !important;
 }
 
 li button .nav-link {
@@ -40,4 +40,10 @@ li button .nav-link {
   font-weight: var(--fontwhtbold);
   font-family: var(--mainfont);
   color: var(--mainfontcolor) !important;
+}
+
+.formSignup {
+  background-color: rgba(15, 14, 38, 0.8);
+  padding: 4rem;
+  border-radius: 0.9rem;
 }
