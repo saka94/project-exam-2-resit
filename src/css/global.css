@@ -17,9 +17,10 @@
   /* Colors */
   --bitblue: #1e1940;
   --darkblue: #0f0e26;
+  --toxicgreen: rgba(0, 125, 44, 0.8);
   --forestgreen: #1f7354;
-  --springgreen: rgb(27, 166, 101);
-  --botsgreen: #2cbf60;
+  --springgreen: #1ba665;
+  --botsgreen: rgb(44, 191, 96);
 }
 
 a {

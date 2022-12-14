@@ -1,0 +1,22 @@
+.h1text {
+  color: white;
+  margin-top: 3rem;
+  font-weight: 600;
+  font-family: var(--secondfont);
+}
+
+.tabContainer {
+  position: absolute;
+  top: 20rem;
+}
+
+.tabs {
+  max-width: 23rem;
+  width: 100%;
+  margin-left: 1rem;
+  border: none;
+}
+
+.loginTab ul button {
+  background-color: rgba(27, 166, 101, 0.8) !important;
+}
