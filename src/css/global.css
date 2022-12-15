@@ -23,6 +23,10 @@
   --botsgreen: rgb(44, 191, 96);
 }
 
+body {
+  background-color: #0f0e26;
+}
+
 a {
   text-decoration: none !important;
   color: var(--mainfontcolor) !important;

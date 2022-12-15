@@ -1,9 +1,9 @@
-import styles from "./Home.module.css";
+import GamesList from "./GamesList/GamesList";
 
 export default function Home() {
   return (
     <main>
-      <h1>hey</h1>
+      <GamesList />
     </main>
   );
 }

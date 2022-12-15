@@ -1,0 +1,9 @@
+.loadingSpinner {
+  padding: 6rem;
+  border-width: 1rem;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+}
