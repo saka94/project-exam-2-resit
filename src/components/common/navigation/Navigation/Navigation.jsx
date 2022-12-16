@@ -11,7 +11,7 @@ export default function Navigation() {
       {userDetails ? (
         <Navbar className={styles.navigtaion}>
           <Container>
-            <Navbar.Brand href="#home" className={styles.brand}>
+            <Navbar.Brand href="/home" className={styles.brand}>
               <img src={logo} width="100%" className={styles.logo} alt="Bits and bots logo" />
             </Navbar.Brand>
             <div>Hey hallo</div>
@@ -20,7 +20,7 @@ export default function Navigation() {
       ) : (
         <Navbar className={styles.navigtaion}>
           <Container className="justify-content-center">
-            <Navbar.Brand href="#home" className={styles.brand}>
+            <Navbar.Brand href="/home" className={styles.brand}>
               <img src={logo} width="100%" className={styles.logo} alt="Bits and bots logo" />
             </Navbar.Brand>
           </Container>

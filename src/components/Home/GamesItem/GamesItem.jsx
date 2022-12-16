@@ -26,9 +26,6 @@ export default function GamesItem({ id, altText, gameName, rating, img, price, d
           </Link>
           <Card.Body className={styles.cardBodyStyling}>
             <Card.Title className={styles.cardTitle}>{gameName}</Card.Title>
-            <div>
-              <p>{description}</p>
-            </div>
             <div className="d-flex align-items-baseline justify-content-evenly flex-wrap">
               <div className="d-flex align-items-baseline gap-1 ">
                 <GameRating heartRating={rating} alt={rating} />
