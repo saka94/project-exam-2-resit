@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(187, 187, 187);
+  background-color: var(--bitblue) !important;
 }
 
 .cardStyling {
@@ -10,6 +10,8 @@
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.54);
+  border: none;
+  border-radius: 10px 10px 50px 50px;
 }
 
 .imgStyling {
@@ -21,4 +23,18 @@
 .cardBodyStyling {
   display: flex;
   flex-direction: column;
+  background-color: var(--bitblue) !important;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.cardTitle {
+  font-family: var(--secondfont) !important;
+  color: var(--mainfontcolor);
+  font-weight: var(--fontwhtbold);
+  font-size: var(--ctatextsize);
+}
+
+.addToCartButton {
+  background-color: var(--botsgreen);
+  cursor: pointer;
 }

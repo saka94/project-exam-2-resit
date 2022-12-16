@@ -1,0 +1,11 @@
+.navigtaion {
+  background-color: var(--bitblue) !important;
+}
+
+.logo {
+  max-width: 20rem;
+}
+
+.brand {
+  margin-right: 0 !important;
+}

@@ -1,11 +1,20 @@
-.Heart {
+.heart {
+  height: 20px;
+  width: 100%;
   color: yellow;
 }
 
 .openHeart {
-  color: black;
+  width: 100%;
+  height: 20px;
+  color: var(--mainfontcolor) !important;
 }
 
 .mainContainer {
   margin: 1rem 0;
+}
+
+.heartContainer {
+  display: flex;
+  gap: 4px;
 }

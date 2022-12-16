@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useNavigate } from "react-router-dom";
 
 export default function SignupForm() {
   const schema = yup.object().shape({
@@ -22,13 +23,15 @@ export default function SignupForm() {
     resolver: yupResolver(schema),
   });
 
+  let navigate = useNavigate();
+
   async function registration() {
     const userData = {
       email: document.getElementById("register__email").value,
       password: document.getElementById("register__password").value,
     };
     localStorage.setItem("userdetails", JSON.stringify(userData));
-    window.location.reload();
+    navigate("/home");
   }
 
   return (

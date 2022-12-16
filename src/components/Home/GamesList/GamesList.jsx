@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { baseUrl } from "../../../constants/apiUrl";
 import Loading from "../../common/Loading/Loading";
 import Alert from "react-bootstrap/Alert";
-import { Container } from "react-bootstrap";
+import { Container, Tabs, Tab } from "react-bootstrap";
 import GamesItem from "../GamesItem/GamesItem";
 
 export default function GamesList() {
@@ -45,14 +45,66 @@ export default function GamesList() {
   }
 
   return (
-    <Container className="w-auto d-flex flex-row text-center my-5 justify-content-center flex-wrap">
-      {games.map(function (game) {
-        const { id } = game;
-        const { title, rating, price } = game.attributes;
-        const { alternativeText } = game.attributes.cover_image.data.attributes;
-        const { url } = game.attributes.cover_image.data.attributes.formats.medium;
-        return <GamesItem key={id} id={id} gameName={title} altText={alternativeText} img={url} rating={rating} price={price} />;
-      })}
+    <Container className="w-auto flex-row text-center my-5 justify-content-center flex-wrap">
+      <Tabs defaultActiveKey="arcade" id="uncontrolled-tab-example" className="mb-3 d-flex flex-wrap justify-content-center">
+        <Tab eventKey="arcade" title="Arcade">
+          {games.map(function (game) {
+            return game.attributes.genere === "horror" ? (
+              <GamesItem
+                key={game.id}
+                id={game.id}
+                altText={game.attributes.cover_image.data.attributes.alternativeText}
+                rating={game.attributes.rating}
+                gameName={game.attributes.title}
+                img={game.attributes.cover_image.data.attributes.url}
+                price={game.attributes.price}
+                description={game.attributes.description}
+                genere={game.attributes.genere}
+              />
+            ) : (
+              <div key={game.id}></div>
+            );
+          })}
+        </Tab>
+        <Tab eventKey="rpg" title="Rpg">
+          {games.map(function (game) {
+            return game.attributes.genere === "Rpg" ? (
+              <GamesItem
+                key={game.id}
+                id={game.id}
+                altText={game.attributes.cover_image.data.attributes.alternativeText}
+                rating={game.attributes.rating}
+                gameName={game.attributes.title}
+                img={game.attributes.cover_image.data.attributes.url}
+                price={game.attributes.price}
+                description={game.attributes.description}
+                genere={game.attributes.genere}
+              />
+            ) : (
+              <div key={game.id}></div>
+            );
+          })}
+        </Tab>
+        <Tab eventKey="racing" title="Racing">
+          {games.map(function (game) {
+            return game.attributes.genere === "racing" ? (
+              <GamesItem
+                key={game.id}
+                id={game.id}
+                altText={game.attributes.cover_image.data.attributes.alternativeText}
+                rating={game.attributes.rating}
+                gameName={game.attributes.title}
+                img={game.attributes.cover_image.data.attributes.url}
+                price={game.attributes.price}
+                description={game.attributes.description}
+                genere={game.attributes.genere}
+              />
+            ) : (
+              <div key={game.id}></div>
+            );
+          })}
+        </Tab>
+      </Tabs>
     </Container>
   );
 }

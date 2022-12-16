@@ -8,6 +8,7 @@
 .tabContainer {
   position: absolute;
   top: 20rem;
+  margin-top: -5rem;
 }
 
 .tabs {
