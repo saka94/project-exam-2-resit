@@ -38,3 +38,9 @@
   background-color: var(--botsgreen);
   border: 0;
 }
+
+@media (max-width: 767px) {
+  .formSignup {
+    padding: 4rem 1rem;
+  }
+}

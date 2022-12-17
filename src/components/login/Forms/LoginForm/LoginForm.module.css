@@ -46,3 +46,9 @@
 .errorTextStyle {
   color: yellow;
 }
+
+@media (max-width: 767px) {
+  .form {
+    padding: 4rem 1rem;
+  }
+}
