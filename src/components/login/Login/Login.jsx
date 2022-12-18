@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <>
       <LoginVideo />
-      <main className="d-flex justify-content-center">
+      <main className="d-flex justify-content-center" style={{ height: "100vh" }}>
         <LoginTabs />
       </main>
     </>
