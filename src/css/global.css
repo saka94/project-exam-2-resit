@@ -32,12 +32,6 @@ a {
   color: var(--mainfontcolor) !important;
 }
 
-footer {
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-}
-
 h1 {
   color: white;
   margin-top: 3rem;

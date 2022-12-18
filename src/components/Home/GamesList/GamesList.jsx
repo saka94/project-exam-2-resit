@@ -47,62 +47,68 @@ export default function GamesList() {
   return (
     <Container className="w-auto flex-row text-center my-5 justify-content-center flex-wrap">
       <Tabs defaultActiveKey="arcade" id="uncontrolled-tab-example" className="mb-3 d-flex flex-wrap justify-content-center">
-        <Tab eventKey="arcade" title="Arcade">
-          {games.map(function (game) {
-            return game.attributes.genere === "horror" ? (
-              <GamesItem
-                key={game.id}
-                id={game.id}
-                altText={game.attributes.cover_image.data.attributes.alternativeText}
-                rating={game.attributes.rating}
-                gameName={game.attributes.title}
-                img={game.attributes.cover_image.data.attributes.url}
-                price={game.attributes.price}
-                description={game.attributes.description}
-                genere={game.attributes.genere}
-              />
-            ) : (
-              <div key={game.id}></div>
-            );
-          })}
+        <Tab eventKey="arcade" title="Horror">
+          <div className="d-flex flex-wrap justify-content-center">
+            {games.map(function (game) {
+              return game.attributes.genere === "horror" ? (
+                <GamesItem
+                  key={game.id}
+                  id={game.id}
+                  altText={game.attributes.cover_image.data.attributes.alternativeText}
+                  rating={game.attributes.rating}
+                  gameName={game.attributes.title}
+                  img={game.attributes.cover_image.data.attributes.url}
+                  price={game.attributes.price}
+                  description={game.attributes.description}
+                  genere={game.attributes.genere}
+                />
+              ) : (
+                <div key={game.id}></div>
+              );
+            })}
+          </div>
         </Tab>
         <Tab eventKey="rpg" title="Rpg">
-          {games.map(function (game) {
-            return game.attributes.genere === "Rpg" ? (
-              <GamesItem
-                key={game.id}
-                id={game.id}
-                altText={game.attributes.cover_image.data.attributes.alternativeText}
-                rating={game.attributes.rating}
-                gameName={game.attributes.title}
-                img={game.attributes.cover_image.data.attributes.url}
-                price={game.attributes.price}
-                description={game.attributes.description}
-                genere={game.attributes.genere}
-              />
-            ) : (
-              <div key={game.id}></div>
-            );
-          })}
+          <div className="d-flex flex-wrap justify-content-center">
+            {games.map(function (game) {
+              return game.attributes.genere === "rpg" ? (
+                <GamesItem
+                  key={game.id}
+                  id={game.id}
+                  altText={game.attributes.cover_image.data.attributes.alternativeText}
+                  rating={game.attributes.rating}
+                  gameName={game.attributes.title}
+                  img={game.attributes.cover_image.data.attributes.url}
+                  price={game.attributes.price}
+                  description={game.attributes.description}
+                  genere={game.attributes.genere}
+                />
+              ) : (
+                <div key={game.id}></div>
+              );
+            })}
+          </div>
         </Tab>
         <Tab eventKey="racing" title="Racing">
-          {games.map(function (game) {
-            return game.attributes.genere === "racing" ? (
-              <GamesItem
-                key={game.id}
-                id={game.id}
-                altText={game.attributes.cover_image.data.attributes.alternativeText}
-                rating={game.attributes.rating}
-                gameName={game.attributes.title}
-                img={game.attributes.cover_image.data.attributes.url}
-                price={game.attributes.price}
-                description={game.attributes.description}
-                genere={game.attributes.genere}
-              />
-            ) : (
-              <div key={game.id}></div>
-            );
-          })}
+          <div className="d-flex flex-wrap justify-content-center">
+            {games.map(function (game) {
+              return game.attributes.genere === "racing" ? (
+                <GamesItem
+                  key={game.id}
+                  id={game.id}
+                  altText={game.attributes.cover_image.data.attributes.alternativeText}
+                  rating={game.attributes.rating}
+                  gameName={game.attributes.title}
+                  img={game.attributes.cover_image.data.attributes.url}
+                  price={game.attributes.price}
+                  description={game.attributes.description}
+                  genere={game.attributes.genere}
+                />
+              ) : (
+                <div key={game.id}></div>
+              );
+            })}
+          </div>
         </Tab>
       </Tabs>
     </Container>

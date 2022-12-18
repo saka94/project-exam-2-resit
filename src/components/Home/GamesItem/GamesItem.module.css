@@ -17,7 +17,7 @@
 .imgStyling {
   width: 100%;
   object-fit: cover;
-  height: 15rem;
+  object-position: top;
 }
 
 .cardBodyStyling {
@@ -35,6 +35,64 @@
 }
 
 .addToCartButton {
-  background-color: var(--botsgreen);
+  background-color: var(--toxicgreen);
   cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  max-width: 7rem;
+  color: var(--mainfontcolor);
+  font-family: var(--secondfont);
+  width: 100%;
+}
+
+.addToCartButton:hover {
+  background-color: var(--springgreen);
+}
+
+.removeFromCartButton {
+  background-color: #8a1717;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  max-width: 7rem;
+  color: var(--mainfontcolor);
+  font-family: var(--secondfont);
+  width: 100%;
+}
+
+.removeFromCartButton:hover {
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.seeMoreButton {
+  width: 100%;
+  color: var(--mainfontcolor);
+  font-family: var(--secondfont) !important;
+  font-weight: var(--fontwhtsemibold) !important;
+}
+
+.toast {
+  position: absolute;
+  top: 0;
+}
+
+.toastHeader {
+  font-family: var(--secondfont);
+  background-color: var(--toxicgreen) !important;
+  color: var(--mainfontcolor);
+}
+
+.toastBody {
+  font-family: var(--mainfont);
+}
+
+.toastHeaderRemove {
+  font-family: var(--secondfont);
+  background-color: #8a1717 !important;
+  color: var(--mainfontcolor);
 }

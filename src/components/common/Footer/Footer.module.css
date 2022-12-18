@@ -4,6 +4,9 @@
   background-color: var(--bitblue) !important;
   font-family: var(--mainfont);
   padding: 1rem 0;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
 .logo {
@@ -14,4 +17,13 @@
 .textFooter {
   font-family: var(--secondfont);
   font-size: var(--navtextsize);
+}
+
+.footerStylingAut {
+  text-align: center;
+  color: var(--mainfontcolor) !important;
+  background-color: var(--bitblue) !important;
+  font-family: var(--mainfont);
+  padding: 1rem 0;
+  width: 100%;
 }
