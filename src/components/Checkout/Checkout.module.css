@@ -1,0 +1,12 @@
+.h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.formContainer {
+  max-width: 25rem;
+}
+
+.lableText {
+  color: var(--mainfontcolor) !important;
+}

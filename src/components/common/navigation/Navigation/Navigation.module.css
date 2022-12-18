@@ -22,3 +22,19 @@
 .cartButton:hover {
   background-color: var(--toxicgreen);
 }
+
+.logoutButton {
+  text-align: center;
+  background-color: #8a1717;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  max-width: 7rem;
+  color: var(--mainfontcolor);
+  font-family: var(--secondfont);
+  width: 100%;
+}
+
+.hide {
+  display: none !important;
+}

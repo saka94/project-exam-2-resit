@@ -20,7 +20,7 @@ export default function Footer() {
       ) : (
         <div className={styles.footerStyling}>
           <div className="d-flex justify-content-between align-items-center mx-4 flex-wrap">
-            <a href="/">
+            <a href="/home">
               <img className={styles.logo} src={logo} alt="Bit and Bots logo" />
             </a>
             <span className={styles.textFooter}>Copyright ©</span>

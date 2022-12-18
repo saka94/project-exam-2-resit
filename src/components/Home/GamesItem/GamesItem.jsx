@@ -9,6 +9,7 @@ import { useState } from "react";
 
 export default function GamesItem({ id, altText, gameName, rating, img, price, description }) {
   const [show, setShow] = useState(false);
+  const [update, setUpdate] = useState(false);
 
   function addToCartButton() {
     let storedGame = localStorage.gamedetails ? JSON.parse(localStorage.gamedetails) : [];
@@ -17,9 +18,15 @@ export default function GamesItem({ id, altText, gameName, rating, img, price, d
       gameName: gameName,
       rating: rating,
       price: price,
+      imageUrl: img,
     };
     storedGame.push(game);
     localStorage.setItem("gamedetails", JSON.stringify(storedGame));
+    setUpdate(true);
+    if (update === true) {
+      setUpdate(false);
+    }
+    localStorage.setItem("update", JSON.stringify(update));
   }
 
   function removeFromCartButton() {

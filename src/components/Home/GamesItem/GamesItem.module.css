@@ -61,6 +61,7 @@
 }
 
 .removeFromCartButton:hover {
+  background-color: #974242;
 }
 
 .priceContainer {

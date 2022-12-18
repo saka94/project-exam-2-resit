@@ -1,0 +1,61 @@
+.listContainer {
+  background-color: var(--bitblue) !important;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.h2 {
+  font-family: var(--mainfont);
+  color: var(--mainfontcolor);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.imageContainer {
+  width: 18rem;
+}
+
+.removeFromCartButton {
+  text-align: center;
+  cursor: pointer;
+  background-color: #8a1717;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  max-width: 7rem;
+  color: var(--mainfontcolor);
+  font-family: var(--secondfont);
+  width: 100%;
+}
+
+.checkOutButton {
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--toxicgreen);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  max-width: 10rem;
+  color: var(--mainfontcolor);
+  font-family: var(--secondfont);
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.checkOutButton:hover {
+  background-color: var(--botsgreen);
+}

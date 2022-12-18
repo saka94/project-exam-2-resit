@@ -6,6 +6,8 @@ import Login from "./components/login/Login/Login";
 import Home from "./components/Home/Home";
 import Navigation from "./components/common/navigation/Navigation/Navigation";
 import GameDetails from "./components/GameDetails/GameDetails";
+import Cart from "./components/Cart/Cart";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/detail/:id" element={<GameDetails />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
         <footer>
           <Footer />
